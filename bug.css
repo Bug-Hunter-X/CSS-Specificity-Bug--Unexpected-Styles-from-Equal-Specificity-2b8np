@@ -1,0 +1,1 @@
+The CSS specificity rules can lead to unexpected styling issues when selectors have equal specificity.  For example, if two selectors have the same level of specificity, the one declared last in the stylesheet will override the previous declaration. This can be difficult to debug because the specificity calculation isn't always intuitive.
