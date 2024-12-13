@@ -1,0 +1,26 @@
+/* bugSolution.css */
+#myElement {
+  color: blue; /* Lower specificity, but declared first */
+}
+
+.myClass #myElement {
+  color: red; /* Higher specificity, will override */
+}
+
+/* Solution 1: Using !important (generally avoid unless absolutely necessary)*/
+#myElement {
+  color: blue !important; 
+}
+
+/* Solution 2: Increasing Specificity of the first selector */
+#myElement.myClass{
+  color:blue;
+}
+
+/* Solution 3: Adjusting CSS structure for better Specificity Management */
+/*Instead of using both .myClass and #myElement. Put this #myElement within the .myClass*/
+.myClass {
+  #myElement {
+    color: blue;
+  }
+}
