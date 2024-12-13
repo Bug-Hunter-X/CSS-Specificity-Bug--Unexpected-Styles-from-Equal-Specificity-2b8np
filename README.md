@@ -1,0 +1,1 @@
+This repository demonstrates a common CSS bug related to specificity.  Two selectors have the same specificity, and the last-declared one takes precedence, potentially leading to unintended styling. The solution showcases how to use the `!important` flag or adjust the selector specificity to resolve the conflict.
